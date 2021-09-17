@@ -30,7 +30,11 @@ function MyApp({ Component, pageProps }: AppProps) {
           >
             meeple.news
           </Typography>
-          <Button href="#" sx={{ my: 1, mx: 1.5 }} startIcon={<Instagram />}>
+          <Button
+            href="https://instagram.com/donteatthemeeples"
+            sx={{ my: 1, mx: 1.5 }}
+            startIcon={<Instagram />}
+          >
             @donteatthemeeples
           </Button>
         </Toolbar>
