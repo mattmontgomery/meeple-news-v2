@@ -20,8 +20,10 @@ const Home: NextPage = () => {
             <Grid
               item
               xs={12}
+              sm={12}
               md={6}
               lg={4}
+              xl={3}
               key={idx}
               sx={{ display: { md: "flex" } }}
             >

@@ -26,10 +26,15 @@ export default function NewsItem(props: LinkPost.Entry): React.ReactElement {
       sx={{
         display: { md: "grid" },
         flex: { md: 1 },
-        gridTemplateRows: { md: "min-content auto min-content" },
       }}
     >
-      <CardActionArea href={props.url}>
+      <CardActionArea
+        href={props.url}
+        sx={{
+          display: { md: "grid" },
+          gridTemplateRows: { md: "300px 1fr auto" },
+        }}
+      >
         <CardMedia>
           <div
             style={{
@@ -47,7 +52,7 @@ export default function NewsItem(props: LinkPost.Entry): React.ReactElement {
             />
           </div>
         </CardMedia>
-        <CardContent style={{ flex: 1 }}>
+        <CardContent sx={{ alignSelf: { md: "start" } }}>
           <Typography gutterBottom variant="h5" fontWeight="bold">
             {props.title}
           </Typography>
