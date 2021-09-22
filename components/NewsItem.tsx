@@ -9,19 +9,9 @@ import {
 } from "@mui/material";
 import Image from "next/image";
 
-import styled from "@emotion/styled";
-
-const StyledCard = styled(Card)`
-  background-color: #fafafa;
-  transition: background-color 0.15s ease-in-out;
-  &:hover {
-    background-color: white;
-  }
-`;
-
 export default function NewsItem(props: LinkPost.Entry): React.ReactElement {
   return (
-    <StyledCard
+    <Card
       variant="outlined"
       sx={{
         display: { md: "grid" },
@@ -66,6 +56,6 @@ export default function NewsItem(props: LinkPost.Entry): React.ReactElement {
           </Button>
         </CardActions>
       </CardActionArea>
-    </StyledCard>
+    </Card>
   );
 }
